@@ -1,0 +1,49 @@
+<header class="header">
+  <nav class="nav-items">
+    <a href="#">Home</a>
+    <a href="about">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <nav class="nav-items">
+    <div *ngIf="isLoggedIn">
+      <button mat-raised-button (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="!isLoggedIn">
+      <button mat-raised-button (click)="goToLogin()">Login</button>
+      <button mat-raised-button (click)="goToRegister()">Register</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>Find your new best friend</h1>
+    <p>Pets available for adoption from over 12,000 shelters and rescues.</p>
+    <button mat-raised-button>Adopt Here</button>
+  </div>
+  <div class="info">
+    <div class="info-text">
+      <p>If you are looking to adopt an animal we have a variety of animals, ranging from dogs and cats to monkeys, who
+        are looking for a new home.</p>
+      <button mat-raised-button>Adopt Here</button>
+    </div>
+    <img src="https://www.monitoruldegalati.ro/media/k2/items/cache/5efbc96efb9bdcda103e05df3d201d5c_XL.jpg" alt="me">
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="bottom-links">
+    <div class="links">
+      <span>More Info</span>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="links">
+      <span>Social Links</span>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>

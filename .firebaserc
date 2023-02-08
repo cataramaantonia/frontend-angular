@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "frontend-avansat-5ac6e"
+  },
+  "targets": {
+    "frontend-avansat-5ac6e": {
+      "hosting": {
+        "frontend-avansat": [
+          "frontend-avansat-5ac6e"
+        ]
+      }
+    }
+  }
+}
