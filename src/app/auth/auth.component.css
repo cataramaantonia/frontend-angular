@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100%;
+}
+
+.container {
+  width: 500px;
+  height: 881px;
+  background-image: url("https://png.pngtree.com/background/20210714/original/pngtree-forest-cartoon-fox-monkey-leaves-animal-background-picture-image_1236666.jpg");
+}
+
+
