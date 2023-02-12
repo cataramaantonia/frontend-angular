@@ -1,0 +1,44 @@
+<header class="header">
+  <nav class="nav-items">
+    <ul class="menu">
+      <li><a class="nav-link" href="home">Home</a></li>
+      <li><a class="nav-link" href="about">About</a></li>
+      <li><a class="nav-link" href="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-items">
+    <div *ngIf="isLoggedIn">
+      <button mat-raised-button (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="!isLoggedIn">
+      <button mat-raised-button (click)="goToLogin()">Login</button>
+      <button mat-raised-button (click)="goToRegister()">Register</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="row">
+    <div class="column">
+      <h1>Find your new best friend</h1>
+      <h2>Monday - Friday: 9:00 am – 5:00 pm</h2>
+      <h2>Saturday: 10:00 pm - 5:00 pm</h2>
+      <h2>Sunday: 12:00 pm – 5:00 pm</h2>
+    </div>
+    <div class="column">
+      <img src="https://s.inyourpocket.com/gallery/110747.jpg" alt="me">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <h1>OUR LOCATION:</h1>
+      <h1>Strada Ziduri Moși 4, București 077085</h1>
+    </div>
+    <div class="column">
+      <h1>Telephone:</h1>
+      <h1>021 243 3045</h1>
+      <h1>Email:</h1>
+      <h1>adopt@piataobor.org</h1>
+    </div>
+  </div>
+</main>
