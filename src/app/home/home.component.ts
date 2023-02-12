@@ -32,4 +32,12 @@ export class HomeComponent implements OnInit{
     this.isLoggedIn = false;
     this.firebaseService.logout();
   }
+
+  goToAbout() {
+    this.router.navigate(['about'])
+  }
+
+  goToContact() {
+    this.router.navigate(['contact'])
+  }
 }
