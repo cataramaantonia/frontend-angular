@@ -1,1 +1,51 @@
-<p>about works!</p>
+<header class="header">
+  <nav class="nav-items">
+    <ul class="menu">
+      <li><a class="nav-link" href="home">Home</a></li>
+      <li><a class="nav-link" href="about">About</a></li>
+      <li><a class="nav-link" href="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav class="nav-items">
+    <div *ngIf="isLoggedIn">
+      <button mat-raised-button (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="!isLoggedIn">
+      <button mat-raised-button (click)="goToLogin()">Login</button>
+      <button mat-raised-button (click)="goToRegister()">Register</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="row">
+    <div class="column">
+      <h1>HISTORY - OBOR ANIMAL ADOPTION CENTER</h1>
+      &nbsp;
+      <h2>The Obor Animal Adoption Center is located in Obor, Bucharest. The people who founded this center dedicated their lives to improving the plight of homeless animals in our nation.
+        Our philosophy is that “each and every animal has intrinsic value and deserves to be treated accordingly—with kindness, compassion and respect.
+        Therefore, our stewardship includes sanctity for their individual lives, and we will not participate in the killing of one animal in order to ‘make room’ for another animal.
+        But rather, we will remain committed to each animal that comes into our care until an appropriate home can be found, because this is part of the humane solution to ending animal suffering.”
+        Our program is a private, nonprofit animal welfare organization founded in 2023.</h2>
+    </div>
+    <div class="column">
+      <img src="https://monkeyhelpers.org/wp-content/uploads/2021/07/Monkey-living-center-kiss.jpg" alt="me">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="http://www.aspca.org/sites/default/files/nyc-adoption-center-facebook.jpg" alt="me">
+    </div>
+    <div class="column">
+      <h2>We rely solely on charitable donations.
+        Our organization does not receive any operating funds from local, state or federal governments to carry out comprehensive services on behalf of animals in need, which include:
+        Animal Rescue & Intake
+        Veterinary Medical Care, including Mandatory Spay/Neuter before adoption
+        Socialization & Rehabilitation
+        Canine Basic Obedience Training for long-term residents
+        Pre- and Post-adoption Counseling
+        Delivery of all dog to their new homes
+      </h2>
+    </div>
+  </div>
+</main>

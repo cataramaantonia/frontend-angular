@@ -1,8 +1,10 @@
 <header class="header">
   <nav class="nav-items">
-    <a href="#">Home</a>
-    <a href="about">About</a>
-    <a href="#">Contact</a>
+    <ul class="menu">
+      <li><a class="nav-link" href="home">Home</a></li>
+      <li><a class="nav-link" href="about">About</a></li>
+      <li><a class="nav-link" href="contact">Contact</a></li>
+    </ul>
   </nav>
   <nav class="nav-items">
     <div *ngIf="isLoggedIn">
@@ -16,34 +18,25 @@
 </header>
 
 <main>
-  <div class="intro">
-    <h1>Find your new best friend</h1>
-    <p>Pets available for adoption from over 12,000 shelters and rescues.</p>
-    <button mat-raised-button>Adopt Here</button>
-  </div>
-  <div class="info">
-    <div class="info-text">
-      <p>If you are looking to adopt an animal we have a variety of animals, ranging from dogs and cats to monkeys, who
-        are looking for a new home.</p>
-      <button mat-raised-button>Adopt Here</button>
+  <div class="row">
+    <div class="column">
+      <h1>Find your new best friend</h1>
+      &nbsp;
+      <h2>Pets available for adoption from over 12,000 shelters and rescues.</h2>
+      <button mat-raised-button (click)="goToAbout()">Learn More</button>
     </div>
-    <img src="https://www.monitoruldegalati.ro/media/k2/items/cache/5efbc96efb9bdcda103e05df3d201d5c_XL.jpg" alt="me">
+    <div class="column">
+      <img src="https://www.sccrescue.org/wp-content/uploads/2020/05/CC_Building-Dogs-1024x402.png" alt="me">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://www.monitoruldegalati.ro/media/k2/items/cache/5efbc96efb9bdcda103e05df3d201d5c_XL.jpg" alt="me">
+    </div>
+    <div class="column">
+      <h1>If you are looking to adopt an animal we have a variety of animals, ranging from dogs and cats to monkeys, who
+        are looking for a new home.</h1>
+      <button mat-raised-button (click)="goToContact()">Adopt Here</button>
+    </div>
   </div>
 </main>
-
-<footer class="footer">
-  <div class="bottom-links">
-    <div class="links">
-      <span>More Info</span>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="links">
-      <span>Social Links</span>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
-</footer>
